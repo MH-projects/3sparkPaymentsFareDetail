@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de cobro</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #171717;
+      background: #ffffff;
+    }
+
+    .ticket {
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+    }
+
+    .concepto {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .titulo {
+      font-weight: 400;
+    }
+
+    .importe {
+      white-space: nowrap;
+      text-align: right;
+      font-weight: 400;
+    }
+
+    .detalles {
+      margin-top: 3px;
+      margin-left: 10px;
+      margin-bottom: 8px;
+      font-size: 9px;
+      line-height: 16px;
+      color: #333333;
+    }
+
+    .detalle {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .detalle .importe {
+      font-size: 9px;
+    }
+
+    .separador {
+      border: 0;
+      border-top: 1px solid #e5e5e5;
+      margin: 8px 0 9px;
+    }
+
+    .segundo-concepto {
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="ticket">
+
+    <section class="concepto">
+      <span class="titulo">Estacionamiento</span>
+      <span class="importe">$95.00</span>
+    </section>
+
+    <div class="detalles">
+      <div class="detalle">
+        <span>1 hora × $45.00</span>
+        <span class="importe">$45.00</span>
+      </div>
+
+      <div class="detalle">
+        <span>5 fracciones × $10.00</span>
+        <span class="importe">$50.00</span>
+      </div>
+    </div>
+
+    <hr class="separador">
+
+    <section class="concepto segundo-concepto">
+      <span class="titulo">Uso de 3Spark</span>
+      <span class="importe">$5.00</span>
+    </section>
+
+  </main>
+</body>
+</html>
